@@ -1,0 +1,61 @@
+body{
+    background-color:#FFFFFF;
+}
+
+li{
+	text-decoration: none;
+  font-family: helvetica;
+	color: black;
+  font-size: 12pt;
+
+}
+
+h1{
+  font-size: 45pt;
+  font-family: helvetica;
+  font-style: bold;
+}
+
+h2{
+  font-size: 30pt;
+  font-family: helvetica;
+  font-style: bold;
+}
+h3{
+  font-size: 25pt;
+  font-family: helvetica;
+  font-style: normal;
+}
+h4{
+  font-size:20pt;
+font-family: helvetica;
+  font-style: italic;
+}
+
+p{
+  font-size: 14pt;
+  font-family: helvetica;
+}
+
+nav a{
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration:none;
+  font-family: helvetica;
+  font-size: 16pt
+  color: black;
+}
+
+.current{
+  text-transform: uppercase;
+  font-style: bold;
+  font-family: helvetica;
+  background-color:#e6fff2;
+}
+
+img{
+  display:flex;
+  justify-content: space-between;
+  flex-shrink: 1;
+}
