@@ -38,9 +38,6 @@ p{
 }
 
 nav a{
-  display:inline-flex;
-  align-items: center;
-  justify-content: center;
   text-decoration:none;
   font-family: helvetica;
   font-size: 16pt
@@ -52,6 +49,45 @@ nav a{
   font-style: bold;
   font-family: helvetica;
   background-color:#e6fff2;
+}
+
+.profile img{
+	width: 90%;
+}
+
+.profile{
+  display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.mainpageimages img{
+  width: 50%;
+}
+
+.mainpageimages{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content; space-around;
+  align-items: center;
+}
+
+.projectsection img{
+  display: flex;
+  width: 90vw;
+  justify-content: space-around;
+}
+
+.projectsection{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 img{
