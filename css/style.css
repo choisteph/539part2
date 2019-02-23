@@ -28,7 +28,7 @@ h3{
 }
 h4{
   font-size:20pt;
-font-family: helvetica;
+  font-family: helvetica;
   font-style: italic;
 }
 
@@ -37,18 +37,37 @@ p{
   font-family: helvetica;
 }
 
+nav{
+  display: grid;
+  background-color:#606772;
+  grid-template-columns: 5;
+}
+
 nav a{
-  text-decoration:none;
+  grid-column-start:1;
+  grid-column-end: 5;
+  text-decoration: none;
   font-family: helvetica;
-  font-size: 16pt
-  color: black;
+  letter-spacing: 2px;
+  font-size: 16pt;
+  color: white;
+}
+
+.footer{
+  background-image: image("footer.png");
+  background-color: #606772;
+  color: white;
+}
+.unit{
+  display: inline-block;
+  position: relative;
 }
 
 .current{
   text-transform: uppercase;
   font-style: bold;
   font-family: helvetica;
-  background-color:#e6fff2;
+  color: white;
 }
 
 .profile img{
@@ -70,9 +89,9 @@ nav a{
 
 .mainpageimages{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content; space-around;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -90,8 +109,77 @@ nav a{
   align-items: center;
 }
 
+.allprojects{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
 img{
   display:flex;
   justify-content: space-between;
   flex-shrink: 1;
+}
+
+@media (prefers-reduced-motion: reduce){
+	.animation:hover{
+		-webkit-animation-name: none;
+	}
+}
+
+@media screen and (min-width:700px){
+
+  .mainpageimages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .gallerycontent{
+    flex-direction: row;
+  }
+	.projectsection{
+		flex-direction: row;
+	}
+	.projectsection img{
+		width: 30%;
+  }
+    .allprojects{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+  }
+}
+
+
+
+@media screen and (min-width:1200px){
+  .mainpageimages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .gallerycontent{
+    flex-direction: row;
+  }
+  .projectsection{
+		flex-direction: row;
+	}
+	.projectsection img{
+		width: 50%;
+  }
+  .allprojects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
